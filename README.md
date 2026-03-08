@@ -14,4 +14,4 @@ To run it locally:
 npm install
 npm start
 
-Live site: https://marvellousdivine.pages.dev/(#)
+Live site: https://marvellousdivine.pages.dev/
