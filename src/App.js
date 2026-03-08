@@ -1,25 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import globalStyles from "./styles";
+import Cursor from "./components/Cursor";
+import Nav from "./components/Nav";
+import Hero from "./components/Hero";
+import About from "./components/About";
+import Skills from "./components/Skills";
+import Projects from "./components/Projects";
+import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      {/* Inject all CSS into the page */}
+      <style>{globalStyles}</style>
+
+      {/* Custom cursor (hidden on mobile — touch devices don't need it) */}
+      <Cursor />
+
+      <Nav />
+
+      <main>
+        <Hero />
+        <About />
+        <Skills />
+        <Projects />
+        <Contact />
+      </main>
+
+      <Footer />
+    </>
   );
 }
-
-export default App;
