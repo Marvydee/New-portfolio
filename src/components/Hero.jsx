@@ -43,7 +43,7 @@ function Hero() {
         >
           <Linkedin size={18} />
         </a>
-        <a href="mailto:divinemarvellous0@email.com">
+        <a href="mailto:divinemarvellous0@gmail.com">
           <Mail size={18} />
         </a>
       </div>
@@ -52,3 +52,4 @@ function Hero() {
 }
 
 export default Hero;
+
