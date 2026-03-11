@@ -15,8 +15,8 @@ function Contact() {
         </p>
 
         {/* Clickable email */}
-        <a className="contact-email" href="mailto:divinemarvellous0@email.com">
-          <Mail size={28} /> divinemarvellous0@email.com
+        <a className="contact-email" href="mailto:divinemarvellous0@gmail.com">
+          <Mail size={28} /> divinemarvellous0@gmail.com
         </a>
 
         {/* Social links */}
@@ -42,3 +42,4 @@ function Contact() {
 }
 
 export default Contact;
+
