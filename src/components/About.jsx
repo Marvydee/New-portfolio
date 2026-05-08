@@ -9,26 +9,31 @@ function About() {
         {/* Left: text */}
         <div className="about-text">
           <p>
-            I'm <strong>Marvellous Divine</strong>, a self-taught frontend
-            developer with a passion for building interfaces that feel as good
-            as they look. I transitioned into tech through curiosity, and I
-            haven't stopped building since.
+            I am <strong>Marvellous Divine</strong>, a fullstack developer who
+            designs and ships practical digital products for real business
+            problems. I build fast, maintainable systems with a strong focus on
+            usability and measurable outcomes.
           </p>
           <p>
-            My focus is on <strong>React, JavaScript, and CSS</strong> —
-            creating performant, responsive, and accessible web experiences. I'm
-            currently open to frontend roles where I can grow and contribute to
-            meaningful products.
+            My stack includes{" "}
+            <strong>
+              React, JavaScript, TypeScript, Node.js, APIs, and responsive UI
+              engineering
+            </strong>
+            , with working familiarity in{" "}
+            <strong>Laravel/PHP and database-backed applications</strong>. I
+            enjoy building SaaS workflows, operational dashboards, and scalable
+            product experiences from interface to backend logic.
           </p>
         </div>
 
         {/* Right: stat boxes */}
         <div className="about-stats">
           {[
-            { num: "7+", desc: "Projects Built" },
-            { num: "2+", desc: "Years Learning" },
-            { num: "5+", desc: "APIs Integrated" },
-            { num: "100%", desc: "Self-Taught" },
+            { num: "10+", desc: "Products & Projects Built" },
+            { num: "8+", desc: "Business Workflows Implemented" },
+            { num: "15+", desc: "API Integrations Delivered" },
+            { num: "E2E", desc: "Frontend to Backend Ownership" },
           ].map((s) => (
             <div className="stat-box" key={s.desc}>
               <div className="stat-num">{s.num}</div>

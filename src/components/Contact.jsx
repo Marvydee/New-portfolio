@@ -9,9 +9,9 @@ function Contact() {
 
       <div className="contact-inner">
         <p>
-          I'm currently open to frontend developer roles — full-time, contract,
-          or freelance. If you have a project in mind or just want to connect,
-          my inbox is always open.
+          I am open to fullstack engineering roles and product-focused freelance
+          partnerships. If you are building a SaaS platform, internal business
+          system, or customer-facing web product, I am available to collaborate.
         </p>
 
         {/* Clickable email */}

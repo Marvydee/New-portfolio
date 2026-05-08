@@ -5,27 +5,33 @@ function Skills() {
   return (
     <section className="skills-section" id="skills">
       <p className="section-label">What I Know</p>
-      <h2 className="section-title">Skills</h2>
+      <h2 className="section-title">Engineering Stack</h2>
 
-      <div className="skills-grid">
-        {SKILLS.map((skill) => {
-          const Icon = skill.icon; // pull out the icon component
+      <div className="skills-grid skills-category-grid">
+        {SKILLS.map((category) => {
+          const CategoryIcon = category.icon;
           return (
-            <div className="skill-card" key={skill.name}>
-              <div className="skill-header">
+            <article
+              className="skill-card skill-category-card"
+              key={category.category}
+            >
+              <div className="skill-header skill-category-title">
                 <span className="skill-name">
-                  <Icon size={16} /> {skill.name}
+                  <CategoryIcon size={16} /> {category.category}
                 </span>
-                <span className="skill-pct">{skill.level}%</span>
               </div>
-              <div className="skill-bar">
-                {/* Width is set inline so each bar fills to its own level */}
-                <div
-                  className="skill-fill"
-                  style={{ width: `${skill.level}%` }}
-                />
+
+              <div
+                className="skill-list"
+                aria-label={`${category.category} technologies`}
+              >
+                {category.items.map((item) => (
+                  <span className="tag skill-chip" key={item}>
+                    {item}
+                  </span>
+                ))}
               </div>
-            </div>
+            </article>
           );
         })}
       </div>
